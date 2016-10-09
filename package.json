@@ -1,0 +1,51 @@
+{
+  "name": "koa-react-starter",
+  "version": "1.0.0",
+  "description": "A great way to start your app with koa and react!",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "react": "gulp set",
+    "test": "mocha ./tests/ && ./node_modules/.bin/eslint .",
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha ./tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cynical89/social-project.git"
+  },
+  "keywords": [
+    "koa",
+    "react",
+    "starter"
+  ],
+  "author": "cynical89 (@cynical89)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cynical89/social-project/issues"
+  },
+  "homepage": "https://github.com/cynical89/social-project#readme",
+  "dependencies": {
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "koa": "^1.2.4",
+    "koa-bodyparser": "^2.2.0",
+    "koa-cors": "0.0.16",
+    "koa-generic-session": "^1.11.3",
+    "koa-router": "^5.4.0",
+    "koa-send": "^3.2.0",
+    "koa-static-folder": "^0.1.6",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^2.8.1"
+  },
+  "devDependencies": {
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.7.1",
+    "gulp": "^3.9.1",
+    "gulp-live-server": "0.0.30",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.1.0"
+  }
+}

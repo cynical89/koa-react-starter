@@ -7,7 +7,7 @@ const config = require("./config.json");
 const koa = require("koa");
 const bodyParser = require("koa-bodyparser");
 const session = require("koa-generic-session");
-const serve = require("koa-static-folder");
+const serve = require("koa-static");
 
 const app = koa();
 
@@ -23,7 +23,6 @@ app.use(session());
 // body parser
 app.use(bodyParser());
 
-// serve static files
 app.use(serve("./public"));
 
 app.use(function* error(next) {

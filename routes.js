@@ -9,6 +9,14 @@ const routes = new Router();
 
 const main = require("./server/controllers/main.js");
 
-routes.get("/", main.index);
+routes.use(function* route(next) {
+	this.type = "json";
+	yield next;
+});
 
-app.use(routes.middleware());
+routes.get("/", function* index() {
+	this.type = "html";
+	yield main.index.apply(this);
+});
+
+app.use(routes.routes());

@@ -11,8 +11,8 @@ export default class Footer extends React.Component {
 	render() {
 		return (
 						<Col md={7}>
-							<h2>{ this.props.header }</h2>
-							<p>{ this.props.description }</p>
+							<hr></hr>
+							<p>{ this.props.footerText }</p>
 							</Col>
 		);
 	}
@@ -20,5 +20,5 @@ export default class Footer extends React.Component {
 
 Footer.propTypes = {
 	header: React.PropTypes.string,
-	description: React.PropTypes.string
+	footerText: React.PropTypes.string
 };

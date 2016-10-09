@@ -1,13 +1,8 @@
-import React from "react";
-import { render } from "react-dom";
-import { Router, Route, browserHistory } from 'react-router';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-// Pages
-import NotFound from "./pages/not-found";
-import Home from "./pages/home";
+// Routes are all in a separate file
+import Router from './router';
 
-render((
-	<Router history={ browserHistory }>
-		<Route path="/" component={ Home } />
-	</Router>
-), document.getElementById("app"));
+// Router's root element
+ReactDOM.render(Router, document.getElementById('root'));

@@ -3,20 +3,20 @@
 const config = require("./config.json");
 
 const app = require("./server.js").app;
+const send = require("koa-send");
 const Router = require("koa-router");
+const serve = require("koa-static");
 
 const routes = new Router();
 
-const main = require("./server/controllers/main.js");
+app.use(serve("./public"));
 
-routes.use(function* route(next) {
-	this.type = "json";
-	yield next;
-});
-
-routes.get("/", function* index() {
-	this.type = "html";
-	yield main.index.apply(this);
+routes.get("*", function* all() {
+	this.body = yield send(this, `${__dirname}/index.html`);
 });
 
 app.use(routes.routes());
+
+app.use(function* index() {
+	yield send(this, `${__dirname}/public/index.html`);
+});

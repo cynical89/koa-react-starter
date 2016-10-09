@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cynical89/social-project.git"
+    "url": "git+https://github.com/cynical89/koa-react-starter.git"
   },
   "keywords": [
     "koa",
@@ -21,9 +21,9 @@
   "author": "cynical89 (@cynical89)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cynical89/social-project/issues"
+    "url": "https://github.com/cynical89/koa-react-starter/issues"
   },
-  "homepage": "https://github.com/cynical89/social-project#readme",
+  "homepage": "https://github.com/cynical89/koa-react-starter#readme",
   "dependencies": {
     "babel-preset-es2015": "^6.16.0",
     "babel-preset-react": "^6.16.0",

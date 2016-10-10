@@ -8,14 +8,25 @@ const send = require("koa-send");
 const Router = require("koa-router");
 const serve = require("koa-static");
 
+const main = require("./server/controllers/main");
+
 const routes = new Router();
 
 app.use(serve("./public"));
 
+// React routes area start
 routes.get("/", function* all() {
 	this.body = yield send(this, `${__dirname}/index.html`);
 });
+routes.get("/auth", function* all() {
+	this.body = yield send(this, `${__dirname}/index.html`);
+});
+routes.get("/success", function* all() {
+	this.body = yield send(this, `${__dirname}/index.html`);
+});
+// React routes area end
 
+// Routes for passport
 routes.get("/auth/github",
 	passport.authenticate("github")
 );
@@ -26,6 +37,9 @@ routes.get("/auth/github/callback",
 		failureRedirect: "/auth"
 	})
 );
+
+// all other routes
+routes.get("/auth/verify", main.verify);
 
 app.use(routes.routes());
 

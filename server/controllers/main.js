@@ -1,5 +1,11 @@
 "use strict";
 
-module.exports.index = function* index() {
-	this.body = yield this.render("index");
+let user = null;
+
+module.exports.verify = function* verify() {
+	if (this.isAuthenticated()) {
+		user = this.session.passport.user;
+		return this.body = user;
+	}
+	return this.body = null;
 };

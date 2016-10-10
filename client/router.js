@@ -8,6 +8,7 @@ import InnerLayout from "./components/inner-layout";
 // Pages
 import Home from "./pages/index";
 import Auth from "./pages/auth";
+import Success from "./pages/success";
 
 export default (
 	<Router history={browserHistory}>
@@ -17,6 +18,12 @@ export default (
 			<Route path="/auth">
 				<Route component={InnerLayout}>
 					<IndexRoute component={Auth} />
+				</Route>
+			</Route>
+
+			<Route path="/success">
+				<Route component={InnerLayout}>
+					<IndexRoute component={Success} />
 				</Route>
 			</Route>
 

@@ -6,6 +6,7 @@ import MainLayout from "./components/main-layout";
 import InnerLayout from "./components/inner-layout";
 
 // Pages
+import NotFound from "./pages/not-found";
 import Home from "./pages/index";
 import Auth from "./pages/auth";
 import Success from "./pages/success";

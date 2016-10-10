@@ -41,6 +41,11 @@ routes.get("/auth/github/callback",
 // all other routes
 routes.get("/auth/verify", main.verify);
 
+// Final route to catch all pages not found.
+routes.get("*", function* all() {
+	this.body = yield send(this, `${__dirname}/index.html`);
+});
+
 app.use(routes.routes());
 
 app.use(function* index() {

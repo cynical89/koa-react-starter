@@ -1,12 +1,12 @@
-import React from 'react';
-import { Router, Route, browserHistory, IndexRoute } from 'react-router';
+import React from "react";
+import { Router, Route, browserHistory, IndexRoute } from "react-router";
 
 // Layouts
-import MainLayout from './components/main-layout';
-import InnerLayout from './components/inner-layout';
+import MainLayout from "./components/main-layout";
+import InnerLayout from "./components/inner-layout";
 
 // Pages
-import Home from './pages/index';
+import Home from "./pages/index";
 import Auth from "./pages/auth";
 
 export default (

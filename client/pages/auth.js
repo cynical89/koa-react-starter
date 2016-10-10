@@ -6,7 +6,7 @@ const Auth = React.createClass({
 			<div className="auth-page">
 				<div className="container">
 							<div>
-								<a className="btn btn-block btn-social btn-lg btn-github">
+								<a className="btn btn-block btn-social btn-lg btn-github" href="/auth/github">
 									<span className="fa fa-github"></span>
 										Sign in with Github
 								</a>

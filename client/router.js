@@ -15,14 +15,8 @@ export default (
 	<Router history={browserHistory}>
 		<Route component={MainLayout}>
 			<Route path="/" component={Home} />
-			</Route>
-
-			<Route component={MainLayout}>
-				<Route path="/auth" component={Auth} />
-				</Route>
-
-				<Route component={MainLayout}>
-					<Route path="/success" component={Success} />
-					</Route>
-					</Router>
+			<Route path="/auth" component={Auth} />
+			<Route path="/success" component={Success} />
+		</Route>
+	</Router>
 );

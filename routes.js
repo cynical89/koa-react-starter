@@ -14,18 +14,6 @@ const routes = new Router();
 
 app.use(serve("./public"));
 
-// React routes area start
-routes.get("/", function* all() {
-	this.body = yield send(this, `${__dirname}/index.html`);
-});
-routes.get("/auth", function* all() {
-	this.body = yield send(this, `${__dirname}/index.html`);
-});
-routes.get("/success", function* all() {
-	this.body = yield send(this, `${__dirname}/index.html`);
-});
-// React routes area end
-
 // Routes for passport
 routes.get("/auth/github",
 	passport.authenticate("github")
@@ -39,7 +27,7 @@ routes.get("/auth/github/callback",
 );
 
 // all other routes
-routes.get("/auth/verify", main.verify);
+// routes.get("/auth/verify", main.verify);
 
 // Final route to catch all pages not found.
 routes.get("*", function* all() {
@@ -48,6 +36,6 @@ routes.get("*", function* all() {
 
 app.use(routes.routes());
 
-app.use(function* index() {
-	yield send(this, `${__dirname}/public/index.html`);
-});
+// app.use(function* index() {
+// 	yield send(this, `${__dirname}/public/index.html`);
+// });

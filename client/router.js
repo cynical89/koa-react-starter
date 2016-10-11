@@ -17,6 +17,7 @@ export default (
 			<Route path="/" component={Home} />
 			<Route path="/auth" component={Auth} />
 			<Route path="/success" component={Success} />
+			<Route path="*" component={NotFound} />
 		</Route>
 	</Router>
 );

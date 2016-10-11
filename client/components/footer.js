@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 import { Col } from "react-bootstrap";
 
 const styles = {
 	justifyCenter: {
-		justifyContent: 'center'
+		justifyContent: "center"
 	}
 };
 
@@ -19,6 +19,5 @@ export default class Footer extends React.Component {
 }
 
 Footer.propTypes = {
-	header: React.PropTypes.string,
 	footerText: React.PropTypes.string
 };

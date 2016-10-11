@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router';
-import Navigation from '../components/navigation';
-import Footer from '../components/footer';
+import React from "react";
+import { Link } from "react-router";
+import Navigation from "../components/navigation";
+import Footer from "../components/footer";
 import { PageHeader } from "react-bootstrap";
 
 const MainLayout = React.createClass({

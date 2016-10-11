@@ -6,6 +6,7 @@ import MainLayout from "./components/main-layout";
 import InnerLayout from "./components/inner-layout";
 
 // Pages
+import NotFound from "./pages/not-found";
 import Home from "./pages/index";
 import Auth from "./pages/auth";
 import Success from "./pages/success";
@@ -14,19 +15,8 @@ export default (
 	<Router history={browserHistory}>
 		<Route component={MainLayout}>
 			<Route path="/" component={Home} />
-
-			<Route path="/auth">
-				<Route component={InnerLayout}>
-					<IndexRoute component={Auth} />
-				</Route>
-			</Route>
-
-			<Route path="/success">
-				<Route component={InnerLayout}>
-					<IndexRoute component={Success} />
-				</Route>
-			</Route>
-
+			<Route path="/auth" component={Auth} />
+			<Route path="/success" component={Success} />
 		</Route>
 	</Router>
 );

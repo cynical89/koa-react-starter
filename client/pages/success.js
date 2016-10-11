@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const Success = React.createClass({
-	render: function() {
+	render() {
 		return (
 				<div className="container">
 					<h2>Success!</h2>

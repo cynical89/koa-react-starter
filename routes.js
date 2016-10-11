@@ -22,7 +22,7 @@ routes.get("/auth/github",
 
 routes.get("/auth/github/callback",
 	passport.authenticate("github", {
-		successRedirect: "/",
+		successRedirect: "/success",
 		failureRedirect: "/auth"
 	})
 );

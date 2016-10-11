@@ -1,7 +1,7 @@
 import React from "react";
 
 const Auth = React.createClass({
-	render: function() {
+	render() {
 		return (
 				<div className="container">
 					<h2>Log in!</h2>

@@ -10,14 +10,10 @@ const MainLayout = React.createClass({
 			<div className="app">
 				<header className="primary-header"></header>
 					<Navigation />
-					<PageHeader>
-						{ footerConfig.header }
-					</PageHeader>
 				<main>
 					{this.props.children}
 				</main>
 				<Footer
-					header={ footerConfig.header }
 					footerText={ footerConfig.footerText }
 				/>
 			</div>
@@ -26,7 +22,6 @@ const MainLayout = React.createClass({
 });
 
 const footerConfig = {
-	header: "Koa-React-Starter",
 	footerText: "This site was built with react!"
 }
 

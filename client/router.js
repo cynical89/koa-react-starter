@@ -3,7 +3,6 @@ import { Router, Route, browserHistory, IndexRoute } from "react-router";
 
 // Layouts
 import MainLayout from "./components/main-layout";
-import InnerLayout from "./components/inner-layout";
 
 // Pages
 import NotFound from "./pages/not-found";

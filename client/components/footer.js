@@ -1,12 +1,6 @@
 import React from "react";
 import { Col } from "react-bootstrap";
 
-const styles = {
-	justifyCenter: {
-		justifyContent: "center"
-	}
-};
-
 export default class Footer extends React.Component {
 	render() {
 		return (

@@ -28,7 +28,10 @@ routes.get("/auth/github/callback",
 );
 
 // api routes
+routes.get("/auth", main.auth);
 routes.get("/auth/verify", main.verify);
+routes.get("/auth/signout", main.signout);
+routes.get("/account", main.account);
 
 // All pages route to index.html and react-router routes the pages from there
 routes.get("*", function* all() {

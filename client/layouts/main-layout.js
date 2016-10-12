@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router";
-import Navigation from "../components/navigation";
 import Footer from "../components/footer";
 import { PageHeader } from "react-bootstrap";
+import Navigation from "../components/navigation"
 
 const MainLayout = React.createClass({
-	render: function() {
+	render() {
 		return (
 			<div className="app">
 				<header className="primary-header"></header>
-					<Navigation />
+				<Navigation />
 				<main>
 					{this.props.children}
 				</main>

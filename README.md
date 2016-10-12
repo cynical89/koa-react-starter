@@ -1,6 +1,8 @@
 # koa-react-starter
 A starter kit with [Koa](http://koajs.com/) and [React](https://facebook.github.io/react/)!
 
+This kit was inspired by [Koa-Starter](https://github.com/snollygolly/koa-starter)
+
 * This kit is still under development and will be changed several times before the final package is done.
 
 ## Prerequisites

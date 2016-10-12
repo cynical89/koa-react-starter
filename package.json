@@ -6,8 +6,8 @@
   "scripts": {
     "start": "gulp set",
     "webserver": "node server.js",
-    "test": "mocha ./tests/ && ./node_modules/.bin/eslint .",
-    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha ./tests/"
+    "test": "mocha ./server/tests/ && ./node_modules/.bin/eslint .",
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha ./server/tests/"
   },
   "repository": {
     "type": "git",

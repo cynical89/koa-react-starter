@@ -3,8 +3,6 @@ A starter kit with [Koa](http://koajs.com/) and [React](https://facebook.github.
 
 This kit was inspired by [Koa-Starter](https://github.com/snollygolly/koa-starter)
 
-* This kit is still under development and will be changed several times before the final package is done.
-
 ## Prerequisites
 * [Node.js](https://nodejs.org/en/) (Version 5 and up recommended)
 * [Github Client ID and Secret](https://github.com/settings/developers) (for OAuth)
